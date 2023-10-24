@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif !important;
+}
+.homepage{
+    display: flex;
+    max-width: 1390px !important;
+    background-color: black;
+}
+.homepage .homepage__nav{
+    height: 100%;
+}
+.homepage .homepage__nav--home{
+    background-color: #121212;
+    border-radius: 10px;
+    height: 25%;
+}
+
+.homepage__nav--home .nav__home button{
+    border: none;
+    background-color: #121212;
+    color: #fff;
+    font-size: 24px;
+}
+.homepage__nav--home .nav__home p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    margin-bottom: 0 !important;
+}
+.homepage__nav--home .nav__search button{
+    border: none;
+    background-color: #121212;
+    color: #6b6b6b;;
+    font-size: 24px;
+}
+.homepage__nav--home .nav__search p{
+    color: #6b6b6b;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    margin-bottom: 0 !important;
+}
+.homepage__nav .homepage__nav--library{
+    height: 75%;
+    margin-top: 8px;
+    background-color: #121212;
+    border-radius: 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+}
+.homepage__nav--library .nav__library--header{
+    height: 42px;
+}
+.homepage__nav--library .nav__library--header button{
+    border: none;
+    background-color: #121212;
+    color: #6b6b6b;;
+    font-size: 24px;
+}
+.homepage__nav--library .nav__library--header p{
+    color: #6b6b6b;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    margin-bottom: 0 !important;
+}
+.homepage__nav--library .nav__library--body{
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+.homepage__nav--library .nav__library--body .library__item{
+    margin: auto;
+    width: 92%;
+    background-color: #242424;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 16px;
+}
+.homepage__nav--library .nav__library--body .library__item h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 8px;
+}
+.homepage__nav--library .nav__library--body .library__item p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 12px;
+}
+.homepage__nav--library .nav__library--body .library__item button{
+    display: block;
+    border: none;
+    width: 150px;
+    padding: 8px;
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.homepage__nav--library .nav__library--body .library__item button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.homepage__nav--library .nav__library--footer{
+    height: 180px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    margin-left: 12px;
+}
+.homepage__nav--library .nav__library--footer a{
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+    padding-bottom: 12px;
+}
+.homepage__nav--library .nav__library--footer button{
+    background: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    width: 120px;
+    padding: 4px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.homepage .homepage__menu{
+    margin: 8px;
+    border-radius: 10px;
+    background-color: #121212;
+    border-radius: 10px;
+    /* overflow-y: scroll; */
+}
+.homepage .homepage__menu .homepage__menu--header{
+    height: 60px;
+    padding: 8px;
+}
+.homepage .homepage__menu .homepage__menu--header .btn__register{
+    border: none;
+    background: none;
+    color: #fff;
+    padding-right: 16px;
+    font-weight: bold;
+}
+.homepage .homepage__menu .homepage__menu--header .btn__login{
+    border: none;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    padding-right: 12px;
+    width: 140px;
+    border-radius: 20px;
+}
+.homepage .homepage__menu .homepage__menu--item{
+    height: 500px;
+    overflow-y: scroll;
+}
+.homepage .homepage__menu .homepage__menu--item .menu__item a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 8px;
+    font-size: 24px;
+}
+.homepage .homepage__menu .homepage__menu--item .menu__item a:hover{
+    text-decoration: underline;
+}
+
+.menu__item .menu__item--footer{
+    width: 20%;
+    border-radius: 10px;
+    background-color: #121212;
+    padding: 8px;
+    margin: 8px;
+}
+.menu__item .menu__item--footer img{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.menu__item .menu__item--footer h6{
+    color: #fff;
+    margin-top: 16px;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu__item .menu__item--footer p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #ccc;
+    margin-top: 16px;
+    margin-left: 12px;
+    font-size: 14px;
+}
+.footer .footer__item{
+    margin: 8px;
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+}
+.footer__item .footer__item--text p{
+    margin-left: 8px;
+    padding: 4px;
+    margin-top: 8px;
+    padding-bottom: 0 !important;
+    line-height: 1.4!important;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+}
+.footer__item .footer__item--btn button{
+    border: none;
+    width: 180px;
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+/* Trang Đăng Nhập */
+.header__login{
+    max-width: 1390px !important;
+    background-color: black;
+    width: 100%;
+}
+.header__login button{
+    margin-left: 16px;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 36px;
+}
+.header__login p{
+    font-weight: bold;
+    color: #fff;
+    margin-left: 4px;
+    margin-bottom: 0 !important;
+}
+.login{
+    max-width: 1390px !important;
+    background-color: #121212;
+}
+.login .login__content{
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+.login .login__content .login__content--header h1{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 80px 0px 48px;
+}
+.login .login__content .login__content--header .login__btn button{
+    background: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+.login .login__content .login__content--header .login__btn button i{
+    margin-left: 24px;
+    font-size: 20px;
+}
+.login .login__content .login__content--header .login__btn button p{
+    margin-bottom: 0 !important;
+    padding-left: 8px;
+}
+.login .login__content .login__content--form .login__form--user label{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.login .login__content .login__content--form .login__form--user input{
+    font-size: 12px;
+    padding: 12px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+}
+.login .login__content .login__content--form .login__form--btn{
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background-color: #1fdf64;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.login .login__content .login__content--form a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.login .login__content .login__content--form a:hover{
+    color: #1fdf64;
+}
+.login .login__content .login__content--footer{
+    padding-top: 16px;
+    padding-block-end: 48px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+.login .login__content .login__content--footer a{
+    margin-left: 8px;
+    color: #fff;
+}
+.login .login__content .login__content--footer a:hover{
+    color: #1fdf64;
+}
+.page{
+    max-width: 1390px !important;
+}
